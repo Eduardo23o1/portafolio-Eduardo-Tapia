@@ -1,89 +1,466 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/11.5.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/11.5.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/11.5.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+<head>
+	<title>Paradigm Shift by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="./assets/css/main.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+<body class="is-preload">
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+	<div id="wrapper">
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+		<!-- Intro -->
+		<section class="intro">
+			<header>
+				<h1>Eduardo José Tapia Padilla</h1>
+				<h2>Desarrollador Frontend</h2>
+				<p class="p">Apasionado por la creación de experiencias web dinámicas, accesibles y eficientes.</p>
+				<ul class="actions">
+					<li>
+						<a href="#first" class="arrow scrolly">
+							<i class="fas fa-arrow-down" style="color:white; font-size:40px;"></i>
+							<span class="label">Siguiente</span>
+						</a>
+					</li>
+				</ul>
+			</header>
+			<div class="content">
+				<figure class="image-container">
+					<img src="./images/f.png" alt="Eduardo José Tapia Padilla - Desarrollador Frontend" />
+				</figure>
+			</div>
+		</section>
+
+
+		<!-- Section -->
+		<section id="first">
+			<header>
+				<h2>Perfil Profesional</h2>
+			</header>
+			<div class="content">
+				<p><strong>Desarrollador Frontend</strong> con experiencia en la creación de interfaces dinámicas y
+					responsivas utilizando tecnologías modernas como Angular, JavaScript, HTML5 y CSS3. Conocimientos
+					sólidos en frameworks y bibliotecas como Angular, React y Bootstrap, así como en integración con
+					APIs REST. Apasionado por la optimización del rendimiento y la accesibilidad web.</p>
+				<!--<span class="image main"><img src="images/pic02.jpg" alt="" /></span>-->
+			</div>
+		</section>
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Habilidades Técnicas</h2>
+			</header>
+			<div class="content">
+				<section>
+					<header>
+						<h3>Lenguajes</h3>
+					</header>
+					<div class="content">
+						<ul class="feature-icons">
+							<li class="icon">
+								<a href="#upc" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+											alt="JavaScript Logo" width="24" height="24">
+									</span>
+									JavaScript
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#upc" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+											alt="TypeScript Logo" width="20" height="20">
+									</span>
+									TypeScript
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#upc" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+											alt="HTML5 Logo" width="24" height="24">
+									</span>
+									HTML5
+								</a>
+							</li>
+
+							<li class="icon">
+								<a href="#upc" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+											alt="CSS3 Logo" width="24" height="24">
+									</span>
+									CSS3
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#tende" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
+											alt="Dart Logo">
+									</span>
+									Dart
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<header>
+						<h3>Frameworks y Bibliotecas</h3>
+					</header>
+					<div class="content">
+						<ul class="feature-icons">
+							<li class="icon">
+								<a href="#upc" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+											alt="Angular Logo" width="24" height="24">
+									</span>
+									Angular
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+											alt="React Logo" width="24" height="24">
+									</span>
+									React
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#tende" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+											alt="Flutter Logo" width="24" height="24">
+									</span>
+									Flutter
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+											alt="Bootstrap Logo" width="24" height="24">
+									</span>
+									Bootstrap
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<header>
+						<h3>Herramientas y Tecnologías</h3>
+					</header>
+					<div class="content">
+						<ul class="feature-icons">
+							<li class="icon">
+								<a href="#tende" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+											alt="Git Logo" width="24" height="24">
+									</span>
+									Git
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+											alt="VS Code Logo" width="24" height="24">
+									</span>
+
+									Visual Studio Code
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#tende" target="_blank">
+									<span class="icon-img">
+										<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+											alt="Firebase Logo" width="24" height="24">
+									</span>
+									Firebase
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<header>
+						<h3>Metodologias</h3>
+					</header>
+					<div class="content">
+						<ul class="feature-icons">
+							<li class="icon">
+								<a href="#" target="_blank">
+									<span class="icon-img">
+										<i class="fas fa-laptop-code"></i>
+									</span>
+									Agile
+								</a>
+							</li>
+							<li class="icon">
+								<a href="#" target="_blank">
+									<span class="icon-img">
+										<i class="fas fa-laptop-code"></i>
+									</span>
+									Scrum
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section>
+					<header>
+						<h3>Consumo de APIs</h3>
+					</header>
+					<div class="content">
+						<ul class="feature-icons">
+							<li class="icon">
+								<a href="#" target="_blank">
+									<span class="icon-img">
+										<i class="fas fa-server"></i>
+									</span>
+									RESTful API
+								</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+			</div>
+		</section>
+
+		<!-- Section -->
+		<section>
+			<header>
+				<h2>Proyectos</h2>
+			</header>
+
+			<div class="content">
+				<section>
+					<header>
+						<h3>Desarrollador Frontend & Móvil - 'TENDEFÁCIL'</h3>
+
+					</header>
+					<div class="content">
+						<div class="gallery" id="tende">
+							<ul>
+								<li>Desarrollo e implementación de la aplicación móvil con Dart y Flutter.</li>
+								<li>Uso de Git para el control de versiones, gestión de ramas y colaboración en equipo.
+								</li>
+								<li>Integración con Firebase para la gestión de datos en tiempo real en una aplicación
+									móvil
+									desarrollada con Dart y Flutter.</li>
+								<li>Optimización del rendimiento y accesibilidad de la aplicación móvil.</li>
+								<li>Desarrollo de pruebas unitarias y de integración con Flutter Test y Mockito.</li>
+							</ul>
+							<a href="./images/0.jpg" class="landscape"><img src="./images/0.jpg" alt="" /></a>
+							<a href="./images/1.jpg"><img src="./images/1.jpg" alt="" /></a>
+							<a href="./images/2.jpg"><img src="./images/2.jpg" alt="" /></a>
+							<a href="./images/log.jpg" class="landscape"><img src="./images/log.jpg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+
+				<!-- Section -->
+				<section>
+					<header>
+						<h3>Desarrollador Frontend - Consultorio Jurídico (Universidad Popular del Cesar)</h3>
+					</header>
+					<div class="content">
+						<div class="gallery" id="upc">
+							<ul>
+								<li>Desarrollo de una plataforma web para la gestión de procesos jurídicos utilizando
+									Angular.</li>
+								<li>Implementación de interfaces interactivas con Angular, HTML, CSS y TypeScript.</li>
+								<li>Integración de bases de datos y autenticación de usuarios.</li>
+								<li>Desarrollo de una plataforma web para la gestión de procesos jurídicos.</li>
+								<li>Implementación de interfaces interactivas con HTML, CSS y JavaScript.</li>
+							</ul>
+							<a href="./images/consul_1.jpg" class="landscape"><img src="./images/consul_1.jpg" alt="" /></a>
+							<a href="./images/consul_2.jpg"><img src="./images/consul_2.jpg" alt="" /></a>
+							<a href="./images/consul_4.jpg"><img src="./images/consul_4.jpg" alt="" /></a>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<header>
+						<h3>FORMACIÓN ACADÉMICA</h3>
+					</header>
+					<div class="content">
+
+						<strong>Ingeniería de Sistemas</strong>
+
+						<ul class="alt">
+							<li>Universidad Popular Del Cesar</li>
+						</ul>
+
+						<strong>Técnico en Sistemas</strong>
+
+						<ul class="alt">
+							<li>SENA</li>
+						</ul>
+				</section>
+
+				<section>
+					<header>
+						<h3>Licencias y certificaciones</h3>
+					</header>
+					<div class="content">
+						<div class="certificate">
+							<img src="./images/amazon_web_services_logo.jpg" alt="AWS Logo" class="cert-logo">
+							<div class="cert-details">
+								<h4>AWS Educate Getting Started with Networking</h4>
+								<p><strong class="pp">Amazon Web Services (AWS)</strong></p>
+								<p>Expedición: Octubre 2023</p>
+								<a href="https://www.credly.com/badges/270a2150-76c2-41ee-bdd7-be0fb43913e4/linked_in_profile" class="cert-button" target="_blank">Mostrar credencial</a>
+							</div>
+						</div>
+						        <!-- Certificado Google Cloud -->
+								<div class="certificate">
+									<img src="./images/google-removebg-preview.png" alt="Google Cloud Logo" class="cert-logo">
+									<div class="cert-details">
+										<h4>Build and Secure Networks in Google Cloud</h4>
+										<p>Google Cloud</p>
+										<p><strong class="pp">Expedición:</strong> Sept. 2023</p>
+										<p><strong class="pp">ID de la credencial:</strong> 5044836</p>
+										<a href="https://www.cloudskillsboost.google/public_profiles/698161c9-9e50-4be1-8f7d-c7d73a62105e/badges/5044836?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="cert-button">Mostrar credencial</a>
+									</div>
+								</div>
+
+								<div class="certificate">
+								<img src="./images/google-removebg-preview.png" alt="Google Cloud Logo" class="cert-logo">
+								<div class="cert-details">
+									<h4>Google Cloud Computing Foundations: Cloud Computing Fundamentals</h4>
+									<p>Google Cloud</p>
+									<p><strong class="pp">Expedición:</strong> Sept. 2023</p>
+									<p><strong class="pp">ID de la credencial:</strong> 5053078</p>
+									<a href="https://www.cloudskillsboost.google/public_profiles/698161c9-9e50-4be1-8f7d-c7d73a62105e/badges/5053078?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="cert-button">Mostrar credencial</a>
+								</div>
+							</div>
+					
+							<div class="certificate">
+								<img src="./images/google-removebg-preview.png" alt="Google Cloud Logo" class="cert-logo">
+								<div class="cert-details">
+									<h4>Google Cloud Computing Foundations: Data, ML, and AI in Google Cloud</h4>
+									<p>Google Cloud</p>
+									<p><strong class="pp">Expedición:</strong> Sept. 2023</p>
+									<p><strong class="pp">ID de la credencial:</strong> 5057138</p>
+									<a href="https://www.cloudskillsboost.google/public_profiles/698161c9-9e50-4be1-8f7d-c7d73a62105e/badges/5057138?utm_medium=social&utm_source=linkedin&utm_campaign=ql-social-share" class="cert-button">Mostrar credencial</a>
+								</div>
+							</div>
+					
+							<!-- Certificados Cisco -->
+							<div class="certificate">
+								<img src="./images/cisco.png" alt="Cisco Logo" class="cert-logo">
+								<div class="cert-details">
+									<h4>English for IT 1</h4>
+									<p>Cisco</p>
+									<p><strong class="pp">Expedición:</strong> Sept. 2023</p>
+									<a href="https://www.credly.com/badges/a80a71b0-5e6b-495c-9aa2-b205cba3cd3d/linked_in_profile" class="cert-button">Mostrar credencial</a>
+								</div>
+							</div>
+					
+							<div class="certificate">
+								<img src="./images/cisco.png" alt="Cisco Logo" class="cert-logo">
+								<div class="cert-details">
+									<h4>English for IT 2</h4>
+									<p>Cisco</p>
+									<p><strong class="pp">Expedición:</strong> Sept. 2023</p>
+									<a href="https://www.credly.com/badges/f8b11300-f89f-4a26-8788-9d035c0dc228/linked_in_profile" class="cert-button">Mostrar credencial</a>
+								</div>
+							</div>
+					
+							<div class="certificate">
+								<img src="./images/cisco.png" alt="Cisco Logo" class="cert-logo">
+								<div class="cert-details">
+									<h4>Python Essentials 1</h4>
+									<p>Cisco</p>
+									<p><strong class="pp">Expedición:</strong> May. 2023</p>
+									<a href="https://www.credly.com/badges/d0495db3-a441-4bb8-b6dc-9e1947fb18b6/linked_in_profile" class="cert-button">Mostrar credencial</a>
+								</div>
+							</div>
+						</div>
+					</section>			
+
+				<section>
+					<header>
+						<h2 class="ppp">Contacto</h2>
+					</header>
+					<div class="content">
+						<form>
+							<div class="fields">
+								<div class="field half">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field half">
+									<input type="email" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="field">
+									<textarea name="message" id="message" placeholder="Message" rows="7"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="button primary" /></li>
+							</ul>
+						</form>
+					</div>
+					<footer>
+						<ul class="items">
+							<li>
+								<h3>Email</h3>
+								<a href="#">eduardotapiapadilla@gmail.com</a>
+							</li>
+							<li>
+								<h3>Telefono</h3>
+								<a href="#">(+57) 3008733576</a>
+							</li>
+							<li>
+								<h3>Dirección</h3>
+								<p class="pp">Valledupar, Cesar</p>
+							</li>
+							<li>
+								<h3>Otro lugar</h3>
+								<ul class="icons">
+							</li>
+							</li>
+							<li><a href="https://www.linkedin.com/in/eduardo-jose-tapia-padilla-41707223a/"
+									class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
+							</li>
+							<li><a href="https://github.com/Eduardo23o1?tab=repositories"
+									class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+						</li>
+						</ul>
+					</footer>
+				</section>
+
+				<!-- Copyright -->
+				<div class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5
+						UP</a>.
+				</div>
+
+			</div>
+
+			<!-- Scripts -->
+			<script src="./assets/js/jquery.min.js"></script>
+			<script src="./assets/js/jquery.scrolly.min.js"></script>
+			<script src="./assets/js/browser.min.js"></script>
+			<script src="./assets/js/breakpoints.min.js"></script>
+			<script src="./assets/js/util.js"></script>
+			<script src="./assets/js/main.js"></script>
+
+</body>
+
 </html>
