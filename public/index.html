@@ -8,28 +8,76 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<link rel="stylesheet" href="./assets/css/main.css" />
+	<link rel="stylesheet" href="./assets/css/navbar.css" />
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
+<section class="navigation">
+	<div class="nav-container">
+		<div class="brand">
+			<a href="#!">Logo</a>
+		</div>
+		<nav id="main-navbar">
+			<div class="nav-mobile"><a id="navbar-toggle" href="#!"><span></span></a></div>
+			<ul class="nav-list">
+				<li>
+					<a href="#intro" class="scrolly">Inicio</a>
+				</li>
+				<li>
+					<a href="#perfil" class="scrolly">Perfil</a>
+				</li>
+				<li>
+					<a href="#!">Habilidades</a>
+					<ul class="navbar-dropdown">
+						<li>
+							<a href="#lenguajes" class="scrolly">Lenguajes</a>
+						</li>
+						<li>
+							<a href="#frameworks" class="scrolly">Frameworks y Bibliotecas</a>
+						</li>
+						<li>
+							<a href="#base" class="scrolly">Herramientas y Tecnologías</a>
+						</li>
+						<li>
+							<a href="#metodologias" class="scrolly">Metodologias</a>
+						</li>
+						<li>
+							<a href="#api" class="scrolly">Consumo de APIs</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="#proyectos" class="scrolly">Proyectos</a>
+				</li>
+				<li>
+					<a href="#formacion" class="scrolly">Formación</a>
+				</li>
+				<li>
+					<a href="#licencias" class="scrolly">Certificaciones</a>
+				</li>
+				<li>
+					<a href="#publicaciones" class="scrolly">Publicaciones</a>
+				</li>
+				<li>
+					<a href="#contacto" class="scrolly">Contact</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</section>
 
 <body class="is-preload">
 
 	<div id="wrapper">
-
 		<!-- Intro -->
-		<section class="intro">
+		<section id="intro" class="intro">
 			<header>
 				<h1>Eduardo José Tapia Padilla</h1>
-				<h2>Ingeniero de Sistemas | Desarrollador Frontend</h2>
-				<p class="p">Apasionado por la creación de experiencias web dinámicas, accesibles y eficientes.</p>
-				<ul class="actions">
-					<li>
-						<a href="#first" class="arrow scrolly">
-							<i class="fas fa-arrow-down" style="color:white; font-size:40px;"></i>
-							<span class="label">Siguiente</span>
-						</a>
-					</li>
-				</ul>
+				<h3>Ingeniero de Sistemas | Desarrollador Frontend</h3>
+				<!--<p class="p">Apasionado por la creación de experiencias web dinámicas, accesibles y eficientes.</p>-->
 			</header>
+			<br>
 			<div class="content">
 				<figure class="image-container">
 					<img src="./images/f.png" alt="Eduardo José Tapia Padilla - Desarrollador Frontend" />
@@ -41,7 +89,7 @@
 		<!-- Section -->
 		<section id="first">
 			<header>
-				<h2>Perfil Profesional</h2>
+				<h2 id="perfil">Perfil Profesional</h2>
 			</header>
 			<div class="content">
 				<p><strong>Ingeniero de Sistemas | Desarrollador Frontend</strong> con experiencia en desarrollo web y
@@ -60,12 +108,12 @@
 			</div>
 		</section>
 		<!-- Section -->
-		<section>
+		<section id="habilidades">
 			<header>
 				<h2>Habilidades Técnicas</h2>
 			</header>
 			<div class="content">
-				<section>
+				<section id="lenguajes">
 					<header>
 						<h3>Lenguajes</h3>
 					</header>
@@ -120,7 +168,7 @@
 						</ul>
 					</div>
 				</section>
-				<section>
+				<section id="frameworks">
 					<header>
 						<h3>Frameworks y Bibliotecas</h3>
 					</header>
@@ -165,7 +213,7 @@
 						</ul>
 					</div>
 				</section>
-				<section>
+				<section id="base">
 					<header>
 						<h3>Herramientas y Tecnologías</h3>
 					</header>
@@ -202,7 +250,7 @@
 						</ul>
 					</div>
 				</section>
-				<section>
+				<section id="metodologias">
 					<header>
 						<h3>Metodologias</h3>
 					</header>
@@ -227,7 +275,7 @@
 						</ul>
 					</div>
 				</section>
-				<section>
+				<section id="api">
 					<header>
 						<h3>Consumo de APIs</h3>
 					</header>
@@ -248,7 +296,7 @@
 		</section>
 
 		<!-- Section -->
-		<section>
+		<section id="proyectos">
 			<header>
 				<h2>Proyectos</h2>
 			</header>
@@ -256,8 +304,20 @@
 			<div class="content">
 				<section>
 					<header>
-						<h3>Desarrollador Frontend & Móvil - 'TENDEFÁCIL'</h3>
-
+						<h3>🛍️ TENDEFÁCIL – Aplicación Móvil para Tiendas de Barrio</h3>
+						<h6>TENDEFÁCIL es una aplicación móvil diseñada para digitalizar y fortalecer la gestión de
+							tiendas de barrio, especialmente aquellas asociadas a UNDECO Valledupar. Su objetivo
+							principal es modernizar el funcionamiento de estos pequeños comercios a través de
+							herramientas tecnológicas accesibles, optimizando tanto la administración de la tienda como
+							la experiencia del cliente.</h6>
+						<ul class="actions">
+							<li>
+								<a href="#upc" class="arrow scrolly">
+									<i class="fas fa-arrow-down" style="color:white; font-size:40px;"></i>
+									<span class="label">Siguiente</span>
+								</a>
+							</li>
+						</ul>
 					</header>
 					<div class="content">
 						<div class="gallery" id="tende">
@@ -280,9 +340,22 @@
 				</section>
 
 				<!-- Section -->
-				<section>
+				<section id="upc">
 					<header>
-						<h3>Desarrollador Frontend - Consultorio Jurídico (Universidad Popular del Cesar)</h3>
+						<h3>⚖️ Sistema Web para el Consultorio Jurídico de la Universidad Popular del Cesar</h3>
+						<h6>Desarrollo de una plataforma web para el Consultorio Jurídico de la Universidad Popular del
+							Cesar, orientada a gestionar asesorías y casos jurídicos que los ciudadanos pueden
+							solicitar. El sistema permite registrar usuarios, asignar casos, generar reportes y dar
+							seguimiento a los procesos legales, facilitando la labor de estudiantes y docentes, y
+							mejorando el acceso gratuito a la justicia.</h6>
+						<ul class="actions">
+							<li>
+								<a href="#inmo" class="arrow scrolly">
+									<i class="fas fa-arrow-down" style="color:white; font-size:40px;"></i>
+									<span class="label">Siguiente</span>
+								</a>
+							</li>
+						</ul>
 					</header>
 					<div class="content">
 						<div class="gallery" id="upc">
@@ -301,10 +374,21 @@
 						</div>
 					</div>
 				</section>
-				<section>
+				<section id="inmo">
 					<header>
-						<h3>Desarrollador de Aplicativo Móvil para Inmobiliaria</h3>
-
+						<h3>🏠 Aplicativo Móvil para Inmobiliaria de Valledupar</h3>
+						<h6>Este proyecto consistió en el desarrollo de un aplicativo móvil destinado a la gestión y
+							promoción de inmuebles en la ciudad de Valledupar. Su objetivo fue facilitar la interacción
+							entre la inmobiliaria y los clientes, brindando una experiencia más ágil, visual e intuitiva
+							para la búsqueda y consulta de propiedades.</h6>
+						<ul class="actions">
+							<li>
+								<a href="#eco" class="arrow scrolly">
+									<i class="fas fa-arrow-down" style="color:white; font-size:40px;"></i>
+									<span class="label">Siguiente</span>
+								</a>
+							</li>
+						</ul>
 					</header>
 					<div class="content">
 						<div class="gallery" id="tende">
@@ -326,8 +410,56 @@
 					</div>
 				</section>
 
+				<section id="eco">
+					<header>
+						<h3>♻️ EcoTareas – Aplicación Móvil de Ayuda Colaborativa para Tareas Cotidianas</h3>
+						<h6>EcoTareas es una aplicación móvil que promueve la colaboración entre personas para resolver
+							tareas cotidianas de manera rápida, sencilla y solidaria. A través de la plataforma, los
+							usuarios pueden ofrecer sus servicios o solicitar ayuda para pequeñas actividades del día a
+							día, como regar plantas, sacar fotocopias, ayudar con deberes escolares o brindar clases
+							rápidas.</h6>
+						<ul class="actions">
+							<li>
+								<a href="#formacion" class="arrow scrolly">
+									<i class="fas fa-arrow-down" style="color:white; font-size:40px;"></i>
+									<span class="label">Siguiente</span>
+								</a>
+							</li>
+						</ul>
+					</header>
+					<div class="content">
+						<div class="gallery" id="tende">
+							<ul>
+								<li><strong>Flutter</strong> - Framework para desarrollo de aplicaciones móviles,
+									utilizado para crear interfaces de usuario nativas para Android e iOS.</li>
+								<li><strong>Dart</strong> - Lenguaje de programación utilizado junto con Flutter para la
+									creación de la lógica de la aplicación.</li>
+								<li><strong>flutter_map</strong> - Paquete utilizado para integrar mapas interactivos en
+									la aplicación, permitiendo mostrar ubicaciones y rutas.</li>
+								<li><strong>BLoC</strong> - Patrón de gestión de estado utilizado para separar la lógica
+									de negocio de la interfaz de usuario, mejorando la escalabilidad y el mantenimiento.
+								</li>
+								<li><strong>Firebase</strong> - Plataforma de Google para bases de datos en tiempo real,
+									autenticación de usuarios y almacenamiento, utilizada para manejar datos y
+									operaciones en la aplicación.</li>
+								<li><strong>Estructura Hexagonal</strong> - Arquitectura de software empleada para
+									organizar el código y facilitar la integración con diversas fuentes de datos y
+									servicios externos.</li>
+								<li><strong>SOLID</strong> - Conjunto de principios de diseño orientado a objetos
+									utilizados para mejorar la calidad del código, la mantenibilidad y la escalabilidad
+									del sistema.</li>
+							</ul>
+
+							<a href="./images/eco1.png" class="landscape"><img src="./images/eco1.png" alt="" /></a>
+							<a href="./images/eco2.png"><img src="./images/eco2.png" alt="" /></a>
+							<a href="./images/eco3.png"><img src="./images/eco3.png" alt="" /></a>
+							<a href="./images/eco4.png" class="landscape"><img src="./images/eco4.png" alt="" /></a>
+						</div>
+					</div>
+				</section>
+
 				<!--FORMACIÓN ACADÉMICA -->
-				<section>
+				<section id="formacion">
 					<header>
 						<h3>FORMACIÓN ACADÉMICA</h3>
 					</header>
@@ -346,9 +478,16 @@
 						</ul>
 				</section>
 
-				<section>
+				<section id="licencias">
 					<header>
 						<h3>Licencias y certificaciones</h3>
+						<ul class="actions">
+							<li>
+								<a href="#publicaciones" class="arrow scrolly">
+									<i class="fas fa-arrow-down" style="color:white; font-size:40px;"></i>
+									<span class="label">Siguiente</span>
+								</a>
+							</li>
 					</header>
 					<div class="content">
 						<div class="certificate">
@@ -434,12 +573,35 @@
 					</div>
 				</section>
 
-				<section>
+				<section id="publicaciones">
+					<header>
+						<h3>PUBLICACIONES</h3>
+					</header>
+					<div class="content">
+
+						<strong>APLICATIVO MÓVIL PARA LA GESTIÓN DE PROCESOS ADMINISTRATIVOS Y OPERATIVOS PARA UNA
+							INMOBILIARIA EN LA CIUDAD DE VALLEDUPAR</strong>
+
+						<ul class="cert-details">
+							<a href="https://dialnet.unirioja.es/servlet/articulo?codigo=8590750"
+								class="cert-button">Mostrar</a>
+						</ul>
+
+						<strong>APLICATIVO MÓVIL PARA LA TRANSFORMACIÓN DIGITAL Y FORTALECIMIENTO DE LAS TIENDAS
+							DENTRODELAECONOMÍAPOPULAR,DELA ASOCIACIÓN UNDECO VALLEDUPAR</strong>
+
+						<ul class="cert-details">
+							<a href="http://repositorio.unicesar.edu.co/items/046c987c-9189-4cb7-857c-ea94e12009da/full"
+								class="cert-button">Mostrar</a>
+						</ul>
+				</section>
+
+				<section id="contacto">
 					<header>
 						<h2 class="ppp">Contacto</h2>
 					</header>
 					<div class="content">
-						<form>
+						<!-- <form>
 							<div class="fields">
 								<div class="field half">
 									<input type="text" name="name" id="name" placeholder="Name" />
@@ -454,18 +616,22 @@
 							<ul class="actions">
 								<li><input type="submit" value="Send Message" class="button primary" /></li>
 							</ul>
-						</form>
+						</form>-->
 					</div>
 					<footer>
 						<ul class="items">
 							<li>
 								<h3>Email</h3>
-								<a href="#">eduardotapiapadilla@gmail.com</a>
+								<a href="mailto:eduardotapiapadilla@gmail.com" title="Enviar correo">
+									<i class="fas fa-envelope"></i>
+								</a>
 							</li>
-							<li>
-								<h3>Telefono</h3>
-								<a href="#">(+57) 3008733576</a>
-							</li>
+							<!--<li>
+								<h3>Teléfono</h3>
+								<a href="tel:+573160697427" title="Llamar a Eduardo Tapia">
+									<i class="fab fa-whatsapp"></i>
+								</a>
+							</li>-->
 							<li>
 								<h3>Dirección</h3>
 								<p class="pp">Valledupar, Cesar</p>
@@ -499,6 +665,7 @@
 			<script src="./assets/js/breakpoints.min.js"></script>
 			<script src="./assets/js/util.js"></script>
 			<script src="./assets/js/main.js"></script>
+			<script src="./assets/js/navbar.js"></script>
 
 </body>
 
