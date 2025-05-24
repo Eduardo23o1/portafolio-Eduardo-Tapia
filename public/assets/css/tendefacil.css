@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(145deg, #8fbb8e , #479a46 );
+  color: white;
+}
+
+.logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cta-buttons {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  background: #fff;
+  color: #479a46;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+}
+
+.btn.secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.mockup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 3rem 1rem;
+  gap: 2rem;
+  align-items: center;
+  background-color: #fff;
+}
+
+.phone {
+  width: 250px;
+  height: 500px;
+  border: 16px solid #333;
+  border-radius: 36px;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.phone .screen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.features {
+  max-width: 400px;
+}
+
+.features h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.features ul {
+  list-style: none;
+}
+
+.features li {
+  margin-bottom: 0.7rem;
+  font-size: 1.1rem;
+}
+
+.screens {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.screens h2 {
+  margin-bottom: 1rem;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  width: 180px;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #479a46;
+  color: white;
+}
+
+
+.role-switch {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 1rem;
+}
+
+.role-switch button {
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.role-switch button.active {
+  background-color: #479a46;
+  color: white;
+}
+
+.carousel {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.carousel.active {
+  display: block;
+}
+
+.carousel img {
+  max-width: 100%;
+  max-height: 500px;
+  border-radius: 10px;
+  display: none;
+  margin: auto;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+/* Controles a los lados */
+.carousel-controls {
+  position: relative;
+  top: -270px; /* Ajusta según altura de imagen */
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none; /* Deja pasar eventos salvo a botones */
+}
+
+.carousel-controls button {
+  pointer-events: all; /* Activa clics solo en botones */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+  .phone {
+    width: 180px;
+    height: 360px;
+    border: 12px solid #333;
+    border-radius: 28px;
+  }
+
+  .features h2 {
+    font-size: 1.3rem;
+  }
+
+  .features li {
+    font-size: 1rem;
+  }
+
+  .gallery img {
+    width: 140px;
+    height: 280px;
+  }
+
+  .carousel img {
+    max-height: 300px;
+  }
+
+  .carousel-controls {
+    top: -180px;
+  }
+
+  .carousel-controls button {
+    font-size: 1.5rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .role-switch {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-controls {
+    top: -160px;
+  }
+
+  .carousel-controls button {
+    font-size: 1.2rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    padding: 0.6rem 1rem;
+    margin: 0.3rem;
+    font-size: 0.9rem;
+  }
+}
+
+
+.tech-stack {
+  background-color: #f0f0f0;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.tech-item {
+  background-color: white;
+  padding: 1rem;
+  width: 220px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.tech-item i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.tech-item p {
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .tech-item {
+    width: 90%;
+  }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0,0,0,0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.lightbox-img {
+  max-width: 90%;
+  max-height: 80vh;
+  margin-bottom: 1rem;
+}
+
+.close {
+  position: absolute;
+  top: 20px; right: 30px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.nav span {
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}

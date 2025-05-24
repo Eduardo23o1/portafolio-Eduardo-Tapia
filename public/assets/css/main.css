@@ -211,13 +211,25 @@ body.is-preload *:after {
 	transition: none !important;
 }
 
-.image-container img {
-	width: 150px;
+.image-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 320px;
 	/* Ajusta según necesidad */
-	height: 150px;
+	height: 320px;
+	/* Ajusta según necesidad */
+}
+
+.image-container img {
+	width: 280px;
+	/* Aumenta el tamaño de la imagen */
+	height: 280px;
+	/* Aumenta el tamaño de la imagen */
 	border-radius: 50%;
 	object-fit: cover;
 }
+
 
 /* Typography */
 
@@ -309,6 +321,10 @@ p {
 }
 
 .pp {
+	color: #ffffff;
+}
+
+.pppp {
 	color: #ffffff;
 }
 
@@ -448,10 +464,14 @@ h6 {
 	}
 
 	.ppp {
-		color: #000000;
+		color: #ffffff;
 	}
 
 	.pp {
+		color: #ffffff;
+	}
+
+	.pppp {
 		color: #000000;
 	}
 
@@ -459,10 +479,18 @@ h6 {
 		color: #000;
 	}
 
-	h3,
+
 	h4,
 	h5,
 	h6 {
+		color: #000000;
+	}
+
+	h3 {
+		color: #ffffff;
+	}
+
+	.contact {
 		color: #000000;
 	}
 
@@ -496,21 +524,32 @@ h6 {
 	}
 
 	.pp {
+		color: #ffffff;
+	}
+
+	.pppp {
 		color: #000000;
 	}
 
 	.ppp {
-		color: #000000;
+		color: #ffffff;
 	}
 
 	a {
 		color: #000;
 	}
 
-	h3,
 	h4,
 	h5,
 	h6 {
+		color: #000000;
+	}
+
+	h3 {
+		color: #ffffff;
+	}
+
+	.contact {
 		color: #000000;
 	}
 

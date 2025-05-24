@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Culebrita</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/game.css" />
+</head>
+
+<body>
+  <h1>🐍 Culebrita</h1>
+  <button id="playBtn" class="btns">Play</button>
+  <canvas id="gameCanvas" style="display:none;"></canvas>
+  <div id="score" style="display:none;">Puntaje: 0</div>
+
+  <div id="gameOver">¡Juego Terminado!</div>
+
+  <div id="controls" style="display:none;">
+    <div><button class="btn" onclick="setDirection('up')">▲</button></div>
+    <div>
+      <button class="btn" onclick="setDirection('left')">◀</button>
+      <button class="btn" onclick="setDirection('down')">▼</button>
+      <button class="btn" onclick="setDirection('right')">▶</button><br>
+      <button id="restartBtn" class="btns" onclick="initGame()" style="display:none;">Reiniciar</button>
+    </div>
+  </div>
+
+  <script src="./assets/js/game.js"></script>
+</body>
+
+</html>

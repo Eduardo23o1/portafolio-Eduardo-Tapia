@@ -1,0 +1,116 @@
+body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.2rem;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-content h3 {
+            margin: 0 0 0.5rem 0;
+            color: #2c3e50;
+        }
+
+        /* Mejoras en los iconos y texto */
+        .tech {
+            margin: 0.8rem 0;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 1rem;
+        }
+
+        .tech-item {
+            display: flex;
+            align-items: center;
+            gap: 0.3rem;
+            background-color: #e1e4e8;
+            padding: 0.3rem 0.6rem;
+            border-radius: 6px;
+            color: #333;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            cursor: default;
+        }
+
+        .tech-item:hover {
+            background-color: #d0d7de;
+        }
+
+        /* Colores por tecnología */
+        .tech-item.dart { color: #0175c2; }          /* Azul Dart */
+        .tech-item.flutter { color: #02569b; }       /* Azul Flutter */
+        .tech-item.git { color: #f05032; }           /* Naranja Git */
+        .tech-item.firebase { color: #f58220; }      /* Naranja Firebase */
+        .tech-item.test { color: #6c757d; }          /* Gris para Testing */
+        .tech-item.angular { color: #dd0031; }       /* Rojo Angular */
+        .tech-item.html5 { color: #e34f26; }         /* Naranja HTML5 */
+        .tech-item.css3 { color: #1572b6; }          /* Azul CSS3 */
+        .tech-item.typescript { color: #3178c6; }    /* Azul TS */
+        .tech-item.flutter_map { color: #339933; }   /* Verde */
+        .tech-item.bloc { color: #0052cc; }          /* Azul BLoC */
+        .tech-item.javascript { color: #f7df1e; }    /* Amarillo JS */
+        .tech-item.canvas { color: #6a0dad; }        /* Púrpura */
+
+        .tech-item i {
+            font-size: 1.3rem;
+        }
+
+        .btn {
+            margin-top: auto;
+            align-self: flex-start;
+            padding: 0.5rem 1rem;
+            background-color: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #1a252f;
+        }

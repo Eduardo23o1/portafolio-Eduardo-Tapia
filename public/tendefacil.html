@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TENDEFÁCIL - App de Tiendas</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="./assets/css/tendefacil.css" />
+</head>
+
+<body>
+  <header class="hero">
+    <img src="./svg/icon-store.svg" alt="Logo Tendifácil" class="logo" />
+    <h1>TENDEFÁCIL</h1>
+    <p>Transformación digital para tiendas de barrio. ¡Gestiona, crece y vende!</p>
+    <div class="cta-buttons">
+      <!--<a href="#" class="btn">Descargar Android</a>
+      <a href="#" class="btn secondary">Ver más</a>-->
+    </div>
+  </header>
+
+  <section class="mockup">
+    <div class="phone">
+      <img src="./images/0.jpg" class="screen" alt="Pantalla app 1" />
+    </div>
+    <div class="features">
+      <h2>¿Qué es TENDEFÁCIL?</h2>
+      <p>
+        <strong>TENDEFÁCIL</strong> es una aplicación móvil creada para digitalizar y fortalecer la gestión de las
+        tiendas de barrio, con un enfoque especial en aquellas asociadas a <strong>UNDECO</strong> (Unión Nacional de
+        Comerciantes) en Valledupar, Colombia. Su principal objetivo es modernizar el funcionamiento de estos pequeños
+        comercios mediante herramientas tecnológicas accesibles, mejorando tanto la administración interna como la
+        experiencia del cliente.
+        <br><br>
+        Uno de sus mayores aportes es la optimización del servicio de domicilios, permitiendo a los clientes visualizar
+        fácilmente los productos disponibles, seleccionar sus favoritos y realizar pedidos desde la comodidad de su
+        hogar.
+      </p>
+    </div>
+  </section>
+
+  <section class="tech-stack">
+    <h2>Tecnologías Utilizadas</h2>
+    <div class="tech-list">
+      <div class="tech-item dart" title="Dart">
+        <i class="fab fa-dart"></i>
+        <p><strong>Dart:</strong> Lenguaje principal para desarrollar la lógica de la aplicación en Flutter.</p>
+      </div>
+      <div class="tech-item flutter" title="Flutter">
+        <i class="fas fa-mobile-alt"></i>
+        <p><strong>Flutter:</strong> Framework para crear la interfaz móvil con un diseño moderno y responsivo.</p>
+      </div>
+      <div class="tech-item git" title="Git">
+        <i class="fab fa-git-alt"></i>
+        <p><strong>Git:</strong> Control de versiones para llevar un seguimiento del desarrollo.</p>
+      </div>
+      <div class="tech-item firebase" title="Firebase">
+        <i class="fas fa-fire"></i>
+        <p><strong>Firebase:</strong> Backend en la nube para autenticación, base de datos y almacenamiento.</p>
+      </div>
+      <div class="tech-item test" title="Test">
+        <i class="fas fa-vial"></i>
+        <p><strong>Test:</strong> Pruebas automatizadas para garantizar el correcto funcionamiento de la app.</p>
+      </div>
+
+    </div>
+  </section>
+
+<section class="screens" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+  <div style="flex: 2;">
+    <h2>Explora la app</h2>
+
+    <div class="role-switch">
+      <button id="showCliente" class="active">Cliente</button>
+      <button id="showTendero">Tendero</button>
+    </div>
+
+    <div id="carouselCliente" class="carousel active">
+      <img src="./assets/tendefacil/Imagen1.png" alt="Registro Cliente" />
+      <img src="./assets/tendefacil/Imagen2.png" alt="Inicio Cliente" />
+      <img src="./assets/tendefacil/cliente/Imagen1.png" alt="Vista Tienda Cliente" />
+      <img src="./assets/tendefacil/cliente/Imagen2.png" alt="Producto Cliente" />
+      <img src="./assets/tendefacil/cliente/Imagen3.png" alt="Carrito Cliente" />
+      <img src="./assets/tendefacil/cliente/Imagen4.png" alt="Compra Cliente" />
+      <img src="./assets/tendefacil/cliente/Imagen5.png" alt="Carrito Cliente" />
+      <img src="./assets/tendefacil/cliente/Imagen6.png" alt="Compra Cliente" />
+    </div>
+
+    <div id="carouselTendero" class="carousel">
+      <img src="./assets/tendefacil/Imagen1.png" alt="Registro Tendero" />
+      <img src="./assets/tendefacil/Imagen2.png" alt="Inicio Tendero" />
+      <img src="./assets/tendefacil/Imagen3.png" alt="Gestión Pedidos" />
+      <img src="./assets/tendefacil/Imagen4.png" alt="Inicio Tendero" />
+      <img src="./assets/tendefacil/Imagen5.png" alt="Gestión Pedidos" />
+      <img src="./assets/tendefacil/Imagen6.png" alt="Inicio Tendero" />
+      <img src="./assets/tendefacil/Imagen7.png" alt="Gestión Pedidos" />
+      <img src="./assets/tendefacil/Imagen8.png" alt="Gestión Pedidos" />
+    </div>
+
+    <div class="carousel-controls">
+      <button id="prevBtn">◀</button>
+      <button id="nextBtn">▶</button>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="Vista ampliada">
+  <div class="nav">
+    <span id="prev">&#10094;</span>
+    <span id="next">&#10095;</span>
+  </div>
+</div>
+    
+  <footer>
+    <p>&copy; 2025 TENDEFÁCIL. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="./assets/js/tendefacil.js"></script>
+</body>
+
+</html>
